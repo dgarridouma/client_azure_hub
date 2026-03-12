@@ -3,14 +3,14 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 
-const char* WIFI_SSID     = "TUSSID";
+const char* WIFI_SSID     = "YOURSSID";
 const char* WIFI_PASSWORD = "***";
 
-const char* IOT_HUB_HOST  = "TUREGISTRO.azure-devices.net";
-const char* DEVICE_ID     = "TUDISPOSITIVO";
+const char* IOT_HUB_HOST  = "YOURHUB.azure-devices.net";
+const char* DEVICE_ID     = "YOURDEVICE";
 const char* SAS_TOKEN     = "SharedAccessSignature sr=...";
 const int   MQTT_PORT     = 8883;
-const char* MQTT_USERNAME = "TUREGISTRO.azure-devices.net/TUDISPOSITIVO/?api-version=2021-04-12";
+const char* MQTT_USERNAME = "YOURHUB.azure-devices.net/YOURDEVICE/?api-version=2021-04-12";
 
 char telemetryTopic[128];
 char c2dTopic[128];
