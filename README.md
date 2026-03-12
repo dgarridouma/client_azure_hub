@@ -18,6 +18,10 @@ All examples simulate temperature, humidity and pressure sensors and share the s
 /esp32_iothub/
     esp32_iothub.ino        # Arduino sketch for ESP32
     SETUP.md                # Setup instructions (certificates, SAS token, etc.)
+/command_hub/
+    .deployment
+    app.py                  # Flask application for sending commands
+    requirements.txt
 README.md
 ```
 
@@ -58,4 +62,14 @@ python python/sensehat_iothub.py
 Connects to Azure IoT Hub via **MQTT over TLS** (port 8883) using the `PubSubClient` library. No Azure SDK required.
 
 See [`esp32_iothub/SETUP.md`](esp32_iothub/SETUP.md) for full setup instructions including certificate download, SAS token generation and sending C2D commands.
+
+---
+
+## command_hub
+
+Flask application for sending commands to IoT Hub
+
+```python
+@app.route('/command')  # sends command to IoT Hub
+```
 
