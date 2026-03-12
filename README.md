@@ -22,6 +22,8 @@ All examples simulate temperature, humidity and pressure sensors and share the s
     .deployment
     app.py                  # Flask application for sending commands
     requirements.txt
+/gemelos_hub/
+    # Several examples using Azure digital twins
 README.md
 ```
 
@@ -72,4 +74,10 @@ Flask application for sending commands to IoT Hub
 ```python
 @app.route('/command')  # sends command to IoT Hub
 ```
+
+---
+
+## gemelos_hub
+
+Several examples showing how to use Azure digital twins: desired and reported properties, query twins, etc.
 
